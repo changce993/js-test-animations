@@ -1,0 +1,157 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+}
+
+.center_y {
+  position: relative;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+.center_x {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#slider-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.slider-arrow {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  position: absolute;
+}
+
+#arrow-prev {
+  left: 80px;
+}
+
+#arrow-next {
+  right: 80px;
+}
+
+#dots-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.dot-nav {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #d6d6d6;
+  transition: .3s;
+}
+
+.dot-nav:hover {
+  background-color: #d6d6d6;
+}
+
+.active-dot {
+  background-color: #d6d6d6;
+}
+
+.zoom-out {
+  animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    /* filter: blur(8px); */
+    transform: scale(1.05);
+    /* opacity: .4; */
+  }
+  to {
+    /* filter: blur(0px); */
+    transform: scale(1);
+    /* opacity: 1; */
+  }
+}
+
+h2 {
+  position: absolute;
+  z-index: 10000;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 80px;
+  font-weight: bold;
+}
+
+h2 div {
+  overflow: hidden;
+}
+
+h2 span {
+  display: inline-block;
+  transform: translateY(70px);
+  transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+h2.content-slide span:nth-child(1) {
+  transform: translateY(0px);
+  transition-delay: 0.1s;
+}
+
+h2.content-slide span:nth-child(2) {
+  transform: translateY(0px);
+  transition-delay: 0.15s;
+}
+
+h2.content-slide span:nth-child(3) {
+  transform: translateY(0px);
+  transition-delay: 0.2s;
+}
+
+h2.content-slide span:nth-child(4) {
+  transform: translateY(0px);
+  transition-delay: 0.25s;
+}
+
+h2.content-slide span:nth-child(5) {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+}
+
+h2.content-slide span:nth-child(6) {
+  transform: translateY(0px);
+  transition-delay: 0.35s;
+}
+
+h2.content-slide span:nth-child(7) {
+  transform: translateY(0px);
+  transition-delay: 0.4s;
+}
