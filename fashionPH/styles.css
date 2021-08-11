@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'Raiderfont'; 
+  src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: montserrat;
+  font-size: 12px;
+  width: 100%;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.left, .right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+
+.left {
+  background-color: #b3b4af;
+  left: 0%;
+  width: 0;
+}
+
+.right {
+  background-color: #191921;
+  right: 0%;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.nav ul li {
+  display: flex;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+  padding: 0 30px;
+}
+
+.nav .logo {
+  flex: 1;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.nav .menu {
+  flex: 1;
+  font-size: 18px;
+}
+
+.nav .collection {
+  flex: 1;
+}
+
+.nav .explore {
+  flex: 4;
+}
+
+.nav .search {
+  flex: 3;
+}
+
+.nav .profile {
+  flex: 0;
+}
+
+.nav .profile .img {
+  background-image: url('./img//profile.jpeg');
+  background-position: 50%;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.img-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+}
+
+.img-wrapper .karina {
+  background-image: url('./img/karina.jpeg');
+  background-size: cover;
+  height: 550px;
+  width: 0;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  background-color: rgba(0,0,0,.8);
+  padding: 0 10px;
+}
+
+.info ul li {
+  display: inline-block;
+  padding: 20px 25px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.info i {
+  font-size: 18px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+}
+
+.text h1 {
+  font-size: 90px;
+  color: white;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 20px;
+  color: white;
+  font-family: monospace;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: -270px;
+  transform: translateY(-50%);
+  font-size: 90px;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+.bottomnav {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+.bottomnav ul li {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin-top: 20px;
+}
